@@ -1,7 +1,3 @@
----
-
-### `README.md` Content
-
 ```markdown
 # Polarization Identification and Analysis (Multi-Task Classification)
 
@@ -73,7 +69,7 @@ Place the competition data files into the `/data/raw` directory following the st
 - `/data/raw/subtask1/train/eng.csv`
 - `/data/raw/subtask2/train/eng.csv`
 - `/data/raw/subtask3/train/eng.csv`
-- *(... and the corresponding Swahili files)*
+- *(... and the corresponding Swahili files in each subtask folder)*
 
 ## 5. Usage (Running the EDA)
 
@@ -87,7 +83,6 @@ The generated PDF files will be saved into the `/figures` directory.
 ## 6. Modeling
 
 The final modeling approach uses fine-tuned **Transformer models** (e.g., multilingual BERT or language-specific models) implemented as independent binary classifiers for Tasks 2 and 3, incorporating specific class weighting based on the imbalance identified in the EDA.
-
 
 ---
 
@@ -106,3 +101,4 @@ Their invaluable teaching, direction, and expertise as my **Lecturers** were ins
 **Author:** Astride Melvin Fokam Ninyim  
 **Email:** [melvin@aims.ac.za](mailto:melvin@aims.ac.za)  
 **LinkedIn:** [https://www.linkedin.com/in/astridemelvinfokamninyim11/](https://www.linkedin.com/in/astridemelvinfokamninyim11/)  
+**Project GitHub:** [https://github.com/YourUsername/polarization-identification-nlp](https://github.com/YourUsername/polarization-identification-nlp) ```
