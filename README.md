@@ -1,4 +1,3 @@
-```markdown
 # Polarization Identification and Analysis (Multi-Task Classification)
 
 ## 1. Project Overview
@@ -8,7 +7,7 @@ This repository documents the solution for a multi-task NLP challenge focused on
 The project is divided into three core multi-label/binary classification tasks:
 
 | Task | Objective | Label Columns |
-| :--- | :--- | :--- |
+|:-----|:----------|:--------------|
 | **Task 1** | **Polarization Identification** | Binary: Polarized (1) vs. Non-Polarized (0) |
 | **Task 2** | **Category Classification** | Multi-Label: Political, Racial/Ethnic, Religious, Gender/Sexual, Other |
 | **Task 3** | **Manifestation Identification** | Multi-Label: Stereotype, Vilification, Dehumanization, Extreme Language, etc. |
@@ -18,9 +17,9 @@ The project is divided into three core multi-label/binary classification tasks:
 The EDA revealed critical linguistic and structural differences essential for the modeling strategy:
 
 | Language | Task 1 Imbalance | Task 2 Dominance | Key Linguistic Feature | Strategic Action |
-| :--- | :--- | :--- | :--- | :--- |
-| **English** | High (64% Non-Polarized) | Political (66% of tags) | Polarization often uses **complex ideological/political terms**. Text length is a **useful** feature. | Use Class Weighting; Use `text_len` as a feature. |
-| **Swahili** | Balanced (~50% Polarized) | Racial/Ethnic (68% of tags) | Polarization often uses **generic, vulgar slang** shared across all categories. Text length is **not** a useful feature. | Use Class Weighting for rare categories; Treat Task 2/3 as independent binary classifiers. |
+|:---------|:-----------------|:-----------------|:-----------------------|:-----------------|
+| **English** | High (64% Non-Polarized) | Political (66% of tags) | Polarization often uses **complex ideological/political terms**. Text length is a **useful** feature. | Use class weighting; Use `text_len` as a feature. |
+| **Swahili** | Balanced (~50% Polarized) | Racial/Ethnic (68% of tags) | Polarization often uses **generic, vulgar slang** shared across all categories. Text length is **not** a useful feature. | Use class weighting for rare categories; Treat Task 2/3 as independent binary classifiers. |
 
 ## 3. Repository Structure
 
@@ -33,17 +32,17 @@ The EDA revealed critical linguistic and structural differences essential for th
 │   └── /raw                 # Original task data (eng.csv, swa.csv for T1, T2, T3)
 │
 ├── /notebooks
-│   ├── 01_EDA_T1_T2_T3.ipynb# Full analysis notebook (where all insights and plots were generated)
-│   └── 02_Modeling.ipynb    # Model experimentation and training
+│   ├── 01_EDA_T1_T2_T3.ipynb    # Full analysis notebook (where all insights and plots were generated)
+│   └── 02_Modeling.ipynb        # Model experimentation and training
 │
 ├── /src
-│   └── utils.py             # All reusable Python functions (Plotting, Stats, Preprocessing)
+│   └── utils.py                 # All reusable Python functions (Plotting, Stats, Preprocessing)
 │
-├── /figures                 # All generated PDF plots (for report/documentation)
+├── /figures                     # All generated PDF plots (for report/documentation)
 │
-├── /models                  # Saved model weights
+├── /models                      # Saved model weights
 │
-└── requirements.txt         # Project dependencies
+└── requirements.txt             # Project dependencies
 ```
 
 ## 4. Setup and Installation
@@ -69,14 +68,14 @@ Place the competition data files into the `/data/raw` directory following the st
 - `/data/raw/subtask1/train/eng.csv`
 - `/data/raw/subtask2/train/eng.csv`
 - `/data/raw/subtask3/train/eng.csv`
-- *(... and the corresponding Swahili files in each subtask folder)*
+- *(and the corresponding Swahili files in each subtask folder)*
 
 ## 5. Usage (Running the EDA)
 
 To regenerate all statistics, correlation matrices, box plots, and word clouds used in the analysis:
 
-1.  Open the main analysis notebook: `notebooks/01_EDA_T1_T2_T3.ipynb`.
-2.  Run all cells.
+1. Open the main analysis notebook: `notebooks/01_EDA_T1_T2_T3.ipynb`
+2. Run all cells
 
 The generated PDF files will be saved into the `/figures` directory.
 
@@ -86,19 +85,20 @@ The final modeling approach uses fine-tuned **Transformer models** (e.g., multil
 
 ---
 
-### 🙏 Acknowledgments
+## 🙏 Acknowledgments
 
 I would like to extend my deepest gratitude and sincere appreciation to the following individuals for their guidance, support, and profound influence on this project:
 
-*   **Shamsuddeen Muhammad**
-*   **Idris Abdulmumin**
+* **Shamsuddeen Muhammad**
+* **Idris Abdulmumin**
 
-Their invaluable teaching, direction, and expertise as my **Lecturers** were instrumental in shaping the methodology and ensuring the successful completion of this analysis and modeling effort.
+Their invaluable teaching, direction, and expertise as my **lecturers** were instrumental in shaping the methodology and ensuring the successful completion of this analysis and modeling effort.
 
-***
-**📧 Contact**
+---
+
+## 📧 Contact
 
 **Author:** Astride Melvin Fokam Ninyim  
 **Email:** [melvin@aims.ac.za](mailto:melvin@aims.ac.za)  
-**LinkedIn:** [https://www.linkedin.com/in/astridemelvinfokamninyim11/](https://www.linkedin.com/in/astridemelvinfokamninyim11/)  
-**Project GitHub:** [https://github.com/YourUsername/polarization-identification-nlp](https://github.com/YourUsername/polarization-identification-nlp) ```
+**LinkedIn:** [linkedin.com/in/astridemelvinfokamninyim11](https://www.linkedin.com/in/astridemelvinfokamninyim11/)  
+**Project GitHub:** [github.com/YourUsername/polarization-identification-nlp](https://github.com/YourUsername/polarization-identification-nlp)
