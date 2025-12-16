@@ -107,4 +107,4 @@ Their invaluable teaching, direction, and expertise as my **lecturers** were ins
 **Author:** Astride Melvin Fokam Ninyim  
 **Email:** [melvin@aims.ac.za](mailto:melvin@aims.ac.za)  
 **LinkedIn:** [linkedin.com/in/astridemelvinfokamninyim11](https://www.linkedin.com/in/astridemelvinfokamninyim11/)  
-**Project GitHub:** [github.com/MELAI-1/polarization-identification-nlp](https://github.com/YourUsername/polarization-identification-nlp)
+**Project GitHub:** [github.com/MELAI-1/polarization-identification-nlp](https://github.com/MELAI-1/polarization-identification-nlp)
