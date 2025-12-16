@@ -1,0 +1,14 @@
+# Minimal requirements for polarization identification NLP project
+numpy
+pandas
+seaborn
+matplotlib
+wordcloud
+scikit-learn
+nltk
+spacy
+gensim
+tqdm
+tokenizers
+transformers
+regex
