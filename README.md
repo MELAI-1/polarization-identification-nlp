@@ -32,8 +32,14 @@ The EDA revealed critical linguistic and structural differences essential for th
 │   └── /raw                 # Original task data (eng.csv, swa.csv for T1, T2, T3)
 │
 ├── /notebooks
-│   ├── 01_EDA_T1_T2_T3.ipynb    # Full analysis notebook (where all insights and plots were generated)
-│   └── 02_Modeling.ipynb        # Model experimentation and training
+│   ├── 01_Exploration.ipynb    # Full analysis notebook (where all insights and plots were generated)
+│   └── 02_Subtask_1_eng.ipynb    # english model for task 1
+│   ├── 02_Subtask_1_swa.ipynb    # swahili model for task 1
+│   └── 03_Subtask_2_eng.ipynb    #english model for task 2 
+│   ├── 03_subtask_2_swa.ipynb    # swahili model for task 2
+│   └── 04_Subtask_3_eng.ipynb    # english model for task 3
+│   ├── 04_subtask_3_swa.ipynb    # swahili model for task 3
+│   
 │
 ├── /src
 │   └── utils.py                 # All reusable Python functions (Plotting, Stats, Preprocessing)
@@ -53,7 +59,7 @@ Ensure you have Python 3.8+ installed.
 
 ### 4.2. Clone the Repository
 ```bash
-git clone https://github.com/YourUsername/polarization-identification-nlp.git
+git clone https://github.com/MELAI-1/polarization-identification-nlp.git
 cd polarization-identification-nlp
 ```
 
@@ -74,7 +80,7 @@ Place the competition data files into the `/data/raw` directory following the st
 
 To regenerate all statistics, correlation matrices, box plots, and word clouds used in the analysis:
 
-1. Open the main analysis notebook: `notebooks/01_EDA_T1_T2_T3.ipynb`
+1. Open the main analysis notebook: `notebooks/01_Exploration.ipynb`
 2. Run all cells
 
 The generated PDF files will be saved into the `/figures` directory.
